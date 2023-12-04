@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    height: 13vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+}
+.navbar .navlinks{
+    display: flex;
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    font-size: 20px;
+    position: relative;
+    font-weight: bolder;
+}
+.navlinks li a::after{
+    content: "";  
+    background: var(--dark-gray);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+}
+.navlinks li a:hover, .navlinks li .active::after{
+    text-decoration: underline;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar img{
+    width: 150px;
+    height: 70px;
+    padding: .9rem 1.5rem;
+}
+.container{
+    padding-top: 6rem;
+}
+#home{
+    display: flex;
+    height: calc(100vh - 13vh);
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    gap: 4rem;
+}
+.image_box img{
+    height: 30rem;
+}
+.content h1{
+    color: black;
+    font-size: 3.5rem;
+    letter-spacing: 0.03rem;
+}
+.content h1 span{
+    color: red;
+}
+.content p{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 1.7rem 0;
+    letter-spacing: 0.03rem;
+}
+.content button{
+    background-color: transparent;
+    border: 1px solid red;
+    font-size: large;
+    color: red;
+    padding: .9rem 1.5rem;
+    letter-spacing: 0.08rem;
+    border-radius: .4rem;
+    transition: 0.3s ease-in-out;
+}
+.content button:hover{
+    background-color: red;
+    color: white;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+.features{
+    width: 40rem;   
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.features .card{
+    border-left: 0.3rem solid red;
+    padding: 0.3rem;
+}
+.features .card h3{
+    color: black;
+    letter-spacing: 0.04rem;
+}
+.card:nth-child(1), .card:nth-child(3){
+    margin-left: 7rem;
+}
+.x-features .x-card img{
+    width: 100%;
+}
+#about{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+}
+#about .about-text{
+    padding: 3.4rem;
+}
+#about .about-text h1{
+    font-size: 3.5rem;
+}
+#about .about-text span{
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+}
+#about .about-text p{
+    margin-top: 20px;
+}
+#about .about-image img{
+    height: 30rem;
+    width: 30rem;
+    padding-right: 1.5rem;
+}
+.about-text button{
+    background-color: black;
+    border: 1px solid black;
+    font-size: medium;
+    color: white;
+    padding: 5px 10px;
+    border-radius: .5rem;
+    transition: 0.3s ease-in-out;
+}
+.about-text button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#product{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+#product .product-text{
+    padding: 3.4rem;
+}
+#product .product-text h1{
+    font-size: 3.5rem;
+}
+#product .product-text span{
+    font-size: 2.4rem;
+}
+#product .quantity-container label{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+#product .quantity-container input{     
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: transparent;
+}
+#product .product-text p{
+    margin-top: 20px;
+}
+#product .product-image img{
+    height: 30rem;
+    width: 30rem;
+    padding-right: 1.5rem;
+}
+#product button{
+    background-color: black;
+    border: 1px solid black;
+    font-size: medium;
+    color: white;
+    padding: 5px 10px;
+    border-radius: .5rem;
+    transition: 0.3s ease-in-out;
+}
+#product button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+footer{
+    background: black;
+}
+footer .container{
+    width: 100%;
+    padding: 70px 30px 40px;
+}
+.socialIcon{
+    display: flex;
+    justify-content: center;
+}
